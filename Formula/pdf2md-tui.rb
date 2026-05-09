@@ -5,21 +5,21 @@
 class Pdf2mdTui < Formula
   desc "High-performance TUI tool for batch PDF to LLM-friendly Markdown conversion"
   homepage "https://github.com/nawodyaishan/pdf2md-tui"
-  version "1.2.5"
+  version "1.2.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nawodyaishan/pdf2md-tui/releases/download/v1.2.5/pdf2md-tui_1.2.5_darwin_amd64.tar.gz"
-      sha256 "2757d61e3a019a459b6e5c3d6a16ec25d7863e4c2c2e62d85053d1f5478d1178"
+      url "https://github.com/nawodyaishan/pdf2md-tui/releases/download/v1.2.6/pdf2md-tui_1.2.6_darwin_amd64.tar.gz"
+      sha256 "1994cd6caac3a4e0d9312410c71680c28a9aa9f7577c1e663c67b0896ddd3c76"
 
       define_method(:install) do
         bin.install "pdf2md-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nawodyaishan/pdf2md-tui/releases/download/v1.2.5/pdf2md-tui_1.2.5_darwin_arm64.tar.gz"
-      sha256 "f499a5e80e338f8863f5890d5ba438c01528698fa20b3e43005d0557f65ddd06"
+      url "https://github.com/nawodyaishan/pdf2md-tui/releases/download/v1.2.6/pdf2md-tui_1.2.6_darwin_arm64.tar.gz"
+      sha256 "479a84e2adda40df8314f6db452e44796540dd463205bf0e1fa68c258fc8fe09"
 
       define_method(:install) do
         bin.install "pdf2md-tui"
@@ -29,15 +29,15 @@ class Pdf2mdTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nawodyaishan/pdf2md-tui/releases/download/v1.2.5/pdf2md-tui_1.2.5_linux_amd64.tar.gz"
-      sha256 "90884515fe6af6b1bd57e8d71b155721a8823a4ed398a88e5e7e2bea00635262"
+      url "https://github.com/nawodyaishan/pdf2md-tui/releases/download/v1.2.6/pdf2md-tui_1.2.6_linux_amd64.tar.gz"
+      sha256 "60c17ca7d42e5c9c6fd2d8be7aa707d5f575b55f817b41f6f2c74e9a7633c831"
       define_method(:install) do
         bin.install "pdf2md-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nawodyaishan/pdf2md-tui/releases/download/v1.2.5/pdf2md-tui_1.2.5_linux_arm64.tar.gz"
-      sha256 "cfd83aae3aa7577b44e62f4102896017ba02c41f7af8742b4f6e282a42d072a4"
+      url "https://github.com/nawodyaishan/pdf2md-tui/releases/download/v1.2.6/pdf2md-tui_1.2.6_linux_arm64.tar.gz"
+      sha256 "1389cbd66cc4b0aa7c30cd9ce810811cab53bbadce210986299c4009fbd78552"
       define_method(:install) do
         bin.install "pdf2md-tui"
       end
