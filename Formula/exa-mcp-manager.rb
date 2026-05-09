@@ -5,21 +5,21 @@
 class ExaMcpManager < Formula
   desc "macOS-first developer utility for wiring Exa MCP into local AI tools"
   homepage "https://github.com/nawodyaishan/mcp-config-tui"
-  version "1.0.2"
+  version "1.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nawodyaishan/mcp-config-tui/releases/download/v1.0.2/exa-mcp-manager_1.0.2_darwin_amd64.tar.gz"
-      sha256 "751a5931a0c4ec1ab21c210e312fdecb773834c7cb0a4d1268fb8f643424a4b1"
+      url "https://github.com/nawodyaishan/mcp-config-tui/releases/download/v1.0.5/exa-mcp-manager_1.0.5_darwin_amd64.tar.gz"
+      sha256 "4789cf80d5c33d14cc0f748513bef011b71802c8d7c06c5c5041eb1daeaa4990"
 
       define_method(:install) do
         bin.install "exa-mcp-manager"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nawodyaishan/mcp-config-tui/releases/download/v1.0.2/exa-mcp-manager_1.0.2_darwin_arm64.tar.gz"
-      sha256 "01973859db515152c5a3387eb8bc401e8a755586c02f0da68c5fcc741227e8bf"
+      url "https://github.com/nawodyaishan/mcp-config-tui/releases/download/v1.0.5/exa-mcp-manager_1.0.5_darwin_arm64.tar.gz"
+      sha256 "dfcdda7e5576de6e03f35ea768d091b4a93a7688b32ba8bf714ae8235835cda3"
 
       define_method(:install) do
         bin.install "exa-mcp-manager"
@@ -29,15 +29,15 @@ class ExaMcpManager < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nawodyaishan/mcp-config-tui/releases/download/v1.0.2/exa-mcp-manager_1.0.2_linux_amd64.tar.gz"
-      sha256 "c76ed3332560479539272a52237dfb11c2923f0584d10788a09246098eba8306"
+      url "https://github.com/nawodyaishan/mcp-config-tui/releases/download/v1.0.5/exa-mcp-manager_1.0.5_linux_amd64.tar.gz"
+      sha256 "4b6a17113d0eac0460c4b912bf6b0d6e6147145d9e27b5d83c50ec63fb6c064e"
       define_method(:install) do
         bin.install "exa-mcp-manager"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nawodyaishan/mcp-config-tui/releases/download/v1.0.2/exa-mcp-manager_1.0.2_linux_arm64.tar.gz"
-      sha256 "3faccd67bbe161ef3379d939ce16dbca9efd0b1a38dae8676a808d165a44b5d3"
+      url "https://github.com/nawodyaishan/mcp-config-tui/releases/download/v1.0.5/exa-mcp-manager_1.0.5_linux_arm64.tar.gz"
+      sha256 "a5fe0e39c5341742d9fd6b8c4aa0ea10a5e1b42ca39584f0600c31fb3398f0aa"
       define_method(:install) do
         bin.install "exa-mcp-manager"
       end
