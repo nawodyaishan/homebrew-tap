@@ -4,10 +4,10 @@
 class Pdf2mdTui < Formula
   desc "High-performance TUI tool for batch PDF to LLM-friendly Markdown conversion"
   homepage "https://github.com/nawodyaishan/pdf2md-tui"
-  url "https://github.com/nawodyaishan/pdf2md-tui/archive/refs/tags/v1.3.4.tar.gz"
-  sha256 "ddc5f0b8360e3eec3c549c5d765d37a115fd57a7083f8b041e1da9e92950a19f"
+  url "https://github.com/nawodyaishan/pdf2md-tui/archive/refs/tags/v1.3.5.tar.gz"
+  sha256 "ce4b1c0bbf5bba16040659aa2797b7ad50d8b76b45a3919181c349f4280f1307"
   license "MIT"
-  version "1.3.4"
+  version "1.3.5"
 
   depends_on "go" => :build
 
