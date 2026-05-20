@@ -5,21 +5,21 @@
 class Usync < Formula
   desc "macOS-first developer utility for universal MCP configuration sync"
   homepage "https://github.com/nawodyaishan/universal-mcp-sync"
-  version "1.3.4"
+  version "1.3.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nawodyaishan/universal-mcp-sync/releases/download/v1.3.4/usync_1.3.4_darwin_amd64.tar.gz"
-      sha256 "27475de075af37654c16e2856a16b928e8818c6605be41b298ef4904e3dbf58c"
+      url "https://github.com/nawodyaishan/universal-mcp-sync/releases/download/v1.3.5/usync_1.3.5_darwin_amd64.tar.gz"
+      sha256 "2f4d0a082e6871ac264e347eb212af8285c0c8494d6325d9f0268aa62ab61a0e"
 
       define_method(:install) do
         bin.install "usync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nawodyaishan/universal-mcp-sync/releases/download/v1.3.4/usync_1.3.4_darwin_arm64.tar.gz"
-      sha256 "68c66d538c889adf645ee359f2343b612b6cc04452dec35e16a1c14fbb2fc1d7"
+      url "https://github.com/nawodyaishan/universal-mcp-sync/releases/download/v1.3.5/usync_1.3.5_darwin_arm64.tar.gz"
+      sha256 "5c2ce72359b5338955e7d1c0a44e51866d4ffe0c5d7b55e288b6e52a4f1af8bc"
 
       define_method(:install) do
         bin.install "usync"
@@ -29,15 +29,15 @@ class Usync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nawodyaishan/universal-mcp-sync/releases/download/v1.3.4/usync_1.3.4_linux_amd64.tar.gz"
-      sha256 "4a82514e123d40866329c112ba8ebd51564421e869d6aad419f96dea6c5e7f44"
+      url "https://github.com/nawodyaishan/universal-mcp-sync/releases/download/v1.3.5/usync_1.3.5_linux_amd64.tar.gz"
+      sha256 "bbe9e89fae333c444060a10cf175c847fe64f5270c4782ba9d8cfd0016972b77"
       define_method(:install) do
         bin.install "usync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nawodyaishan/universal-mcp-sync/releases/download/v1.3.4/usync_1.3.4_linux_arm64.tar.gz"
-      sha256 "558b8b8179e4b1a1137262f645dfd334c32d94f0a5d13e5f355bf3dca0d39538"
+      url "https://github.com/nawodyaishan/universal-mcp-sync/releases/download/v1.3.5/usync_1.3.5_linux_arm64.tar.gz"
+      sha256 "d66307c9ac3e0a82def6250c073669a309f8223fa12e3079742ef565d55a5262"
       define_method(:install) do
         bin.install "usync"
       end
