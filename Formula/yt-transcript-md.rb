@@ -5,21 +5,21 @@
 class YtTranscriptMd < Formula
   desc "Export available YouTube transcripts to Markdown"
   homepage "https://github.com/nawodyaishan/yt-transcript-md"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nawodyaishan/yt-transcript-md/releases/download/v1.0.2/yt-transcript-md_1.0.2_darwin_amd64.tar.gz"
-      sha256 "bd3f329e63f5c6a6570aaefdabd0e8c9bba1f2168c559ab17180665f981a9f5c"
+      url "https://github.com/nawodyaishan/yt-transcript-md/releases/download/v1.0.3/yt-transcript-md_1.0.3_darwin_amd64.tar.gz"
+      sha256 "2e944b5804707b69666c7b2616dba057412a23efc212888b4b24f7bc2550285d"
 
       define_method(:install) do
         bin.install "yt-transcript-md"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nawodyaishan/yt-transcript-md/releases/download/v1.0.2/yt-transcript-md_1.0.2_darwin_arm64.tar.gz"
-      sha256 "6d7064ad3811d23a4aa7b0a278da98f1fd67e2e6a4a50d3348a5aa2533bc6d3f"
+      url "https://github.com/nawodyaishan/yt-transcript-md/releases/download/v1.0.3/yt-transcript-md_1.0.3_darwin_arm64.tar.gz"
+      sha256 "bb5c4a5b7ea4edc145d72517ef5d6a0d3251366d71ce0fcdbd65c3d2c9090b24"
 
       define_method(:install) do
         bin.install "yt-transcript-md"
@@ -29,15 +29,15 @@ class YtTranscriptMd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nawodyaishan/yt-transcript-md/releases/download/v1.0.2/yt-transcript-md_1.0.2_linux_amd64.tar.gz"
-      sha256 "f64ab63006fcaa1669da1f45ecc57848fd171e8e3774f2e680f4240febee00a3"
+      url "https://github.com/nawodyaishan/yt-transcript-md/releases/download/v1.0.3/yt-transcript-md_1.0.3_linux_amd64.tar.gz"
+      sha256 "70412dbb62ffd1ecb888604c67af64319b05f82eed2de2f01419c8e4aeb25904"
       define_method(:install) do
         bin.install "yt-transcript-md"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nawodyaishan/yt-transcript-md/releases/download/v1.0.2/yt-transcript-md_1.0.2_linux_arm64.tar.gz"
-      sha256 "8ee6372cfdeb20a3507a9d30a3f086e59d34971342e381d821f5932628025f53"
+      url "https://github.com/nawodyaishan/yt-transcript-md/releases/download/v1.0.3/yt-transcript-md_1.0.3_linux_arm64.tar.gz"
+      sha256 "0ed309aa5e7463d6072c1fba9d5f5a7f0b34bcb39a6d35a21de6ff45c4c1e1f4"
       define_method(:install) do
         bin.install "yt-transcript-md"
       end
