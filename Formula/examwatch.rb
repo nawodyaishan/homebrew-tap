@@ -5,21 +5,21 @@
 class Examwatch < Formula
   desc "A macOS-native pre-exam rehearsal tool for grid-unstable regions"
   homepage "https://github.com/nawodyaishan/examwatch"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/nawodyaishan/examwatch/releases/download/v1.0.0/examwatch_Darwin_x86_64.tar.gz"
-    sha256 "543a7bd1a8ee2508844973f2d6a30875c6b1811285eba7bb2a2a15ac58812d80"
+    url "https://github.com/nawodyaishan/examwatch/releases/download/v1.1.0/examwatch_Darwin_x86_64.tar.gz"
+    sha256 "9b6b100136d2c0cf8a0afd2b14159282ec723934a5520793b317f0f28b27b9e0"
 
     define_method(:install) do
       bin.install "examwatch"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/nawodyaishan/examwatch/releases/download/v1.0.0/examwatch_Darwin_arm64.tar.gz"
-    sha256 "1898431e1d70fd59df8e658c143a372f136ab2b2b5a04779ecf02f924655a417"
+    url "https://github.com/nawodyaishan/examwatch/releases/download/v1.1.0/examwatch_Darwin_arm64.tar.gz"
+    sha256 "63fe1ba9d52fafe70ef0bec80be03b7a583b2dcdb12c53bc59d5344f00181adc"
 
     define_method(:install) do
       bin.install "examwatch"
