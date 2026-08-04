@@ -5,12 +5,12 @@
 class QuizSnap < Formula
   desc "Capture a screen region and paste it straight into your AI chat tab"
   homepage "https://github.com/nawodyaishan/quiz-snap"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
   depends_on :macos
 
-  url "https://github.com/nawodyaishan/quiz-snap/releases/download/v1.0.0/quiz-snap_1.0.0_darwin_all.tar.gz"
-  sha256 "6fbe22b9e46bf9d0330db42cd53dfe889e060cafcbb0702b7693127cbe317421"
+  url "https://github.com/nawodyaishan/quiz-snap/releases/download/v1.1.0/quiz-snap_1.1.0_darwin_all.tar.gz"
+  sha256 "50c4e8156564fd307c8e268d32902630c7101b0e9700302fbd0757baaf7ce968"
 
   define_method(:install) do
     bin.install "quiz-snap"
