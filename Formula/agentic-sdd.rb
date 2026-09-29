@@ -5,12 +5,12 @@
 class AgenticSdd < Formula
   desc "Spec-driven development workflow skills, kept in sync across Codex, Claude Code, and Antigravity CLI"
   homepage "https://github.com/nawodyaishan/agentic-sdd"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
   depends_on :macos
 
-  url "https://github.com/nawodyaishan/agentic-sdd/releases/download/v0.2.0/agentic-sdd_0.2.0_darwin_all.tar.gz"
-  sha256 "c0e29920406e17861c9f5d343f18583304505191aecaf9cad6fc405fb2eba210"
+  url "https://github.com/nawodyaishan/agentic-sdd/releases/download/v0.3.0/agentic-sdd_0.3.0_darwin_all.tar.gz"
+  sha256 "213b1bf4a929644a6b3630d075fca7d5b92f7e1f1cbab698e2308b390e124485"
 
   define_method(:install) do
     bin.install "agentic-sdd"
