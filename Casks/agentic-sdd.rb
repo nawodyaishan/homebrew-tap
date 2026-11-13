@@ -3,22 +3,26 @@ cask "agentic-sdd" do
   name "agentic-sdd"
   desc "Spec-driven development workflow skills, kept in sync across Codex, Claude Code, and Antigravity CLI"
   homepage "https://github.com/nawodyaishan/agentic-sdd"
-  version "0.10.0"
+  version "0.11.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
+  binary "asdx"
+  binary "asdx-core"
   binary "agentic-sdd"
   binary "agentic-sdd-tui"
 
   on_macos do
-    url "https://github.com/nawodyaishan/agentic-sdd/releases/download/v#{version}/agentic-sdd_#{version}_darwin_all_homebrew.tar.gz"
-    sha256 "83d081743b828475d943cf6ba6e5da802d51469d92cc7959af671888400e77dd"
+    url "https://github.com/nawodyaishan/agentic-sdd/releases/download/v#{version}/agentic-sdd_#{version}_darwin_all.tar.gz"
+    sha256 "42e5d832b4427f1390b59322d1641ec953bcdce7f2c033f5af6f17d60f495f82"
   end
 
   postflight do
     if OS.mac?
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/asdx"]
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/asdx-core"]
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/agentic-sdd"]
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/agentic-sdd-tui"]
     end
