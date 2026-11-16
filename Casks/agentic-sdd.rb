@@ -3,7 +3,7 @@ cask "agentic-sdd" do
   name "agentic-sdd"
   desc "Spec-driven development workflow skills, kept in sync across Codex, Claude Code, and Antigravity CLI"
   homepage "https://github.com/nawodyaishan/agentic-sdd"
-  version "0.12.0"
+  version "0.13.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -16,7 +16,7 @@ cask "agentic-sdd" do
 
   on_macos do
     url "https://github.com/nawodyaishan/agentic-sdd/releases/download/v#{version}/agentic-sdd_#{version}_darwin_all.tar.gz"
-    sha256 "c39743fd1b5ce09ff3bc8b0cd98166cb0cffdaede1c75bfad9b648f60efafdc3"
+    sha256 "2d3bb64675ba1e89e5f788c665372f0257daf54ba8dc5ac6b9256cb6b80e931e"
   end
 
   postflight do
